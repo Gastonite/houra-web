@@ -1,0 +1,8 @@
+id: web
+plugins:
+  - vision
+  - inert
+structure:
+  config: lib/config
+  templates: templates
+  static: static
