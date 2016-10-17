@@ -1,42 +1,24 @@
 {
   "name": "houra-web",
   "version": "1.0.0",
-  "description": "",
-  "main": ".houra.yml",
-  "directories": {
-    "test": "test"
-  },
+  "description": "A simple website houra recipe",
+  "main": "houra.yml",
   "scripts": {
     "test": "lab -vcCD test",
-    "test-watch": "fsmonitor -s -p '+*.js' npm test"
+    "testwatch": "fsmonitor -s -p '+*.js' npm run test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hapipip/houra-web.git"
+    "url": "git+https://github.com/Gastonite/houra-web.git"
   },
   "author": "Clément Pasquier <clement@n00sphere.net>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hapipip/houra-web/issues"
+    "url": "https://github.com/Gastonite/houra-web/issues"
   },
-  "homepage": "https://github.com/hapipip/houra-web#readme",
-  "peerDependencies": {
-    "houra": "git+https://github.com/Gastonite/houra.git"
-  },
-  "devDependencies": {
-    "code": "^3.0.2",
-    "fsmonitor": "^0.2.4",
-    "hapi": "^14.2.0",
-    "houra": "git+https://github.com/Gastonite/houra.git",
-    "lab": "^11.0.1"
-  },
-  "engines": {
-    "node": ">=6.x.x",
-    "npm": ">=3.x.x"
-  },
+  "homepage": "https://github.com/Gastonite/houra-web#readme",
   "dependencies": {
-    "inert": "^4.0.1",
-    "jade": "^1.11.0",
+    "inert": "^4.0.2",
     "vision": "^4.1.0"
   }
 }

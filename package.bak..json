@@ -1,0 +1,44 @@
+{
+  "name": "houra-web",
+  "version": "1.1.0",
+  "description": "",
+  "main": "houra.yml",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "lab -vcCD test",
+    "test2": "lab -r lcov | ./node_modules/.bin/coveralls",
+    "testwatch": "fsmonitor -s -p '+*.js' npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hapipip/houra-web.git"
+  },
+  "author": "Clément Pasquier <clement@n00sphere.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hapipip/houra-web/issues"
+  },
+  "homepage": "https://github.com/hapipip/houra-web#readme",
+  "peerDependencies": {
+    "houra": "git+https://github.com/Gastonite/houra.git#master"
+  },
+  "devDependencies": {
+    "code": "^3.0.2",
+    "coveralls": "^2.11.14",
+    "fsmonitor": "^0.2.4",
+    "hapi": "^14.2.0",
+    "houra": "git+https://github.com/Gastonite/houra.git",
+    "lab": "^11.0.1"
+  },
+  "engines": {
+    "node": ">=6.x.x",
+    "npm": ">=3.x.x"
+  },
+  "dependencies": {
+    "inert": "^4.0.1",
+    "jade": "^1.11.0",
+    "vision": "^4.1.0"
+  }
+}

@@ -1,0 +1,4 @@
+id: web
+steps:
+  - vision as views
+  - inert as static
